@@ -1,0 +1,507 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    list-style: none;
+    text-decoration: none;
+}
+  /* PLACEHOLDER-STYLES */
+    ::-webkit-input-placeholder,
+    ::-moz-placeholder,
+    :-ms-input-placeholder,
+    :-moz-placeholder{
+    color: rgba(52, 49, 61, 0.5);
+    opacity: 1;
+    }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial", "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background: #333;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.dark_mode{
+    background: #fff;
+    color: #333;
+    transition: all 0.4s ease;
+}
+
+/* IMG */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.dark_mode .wrapper1{
+    color: #fff;
+    background: #333;
+    transition: all 0.4s ease;
+} 
+
+.wrapper1{
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    color: #333;
+    background: #fff;
+    transition: all 0.4s ease;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: auto;
+}
+/* MAIN-CONTENT */
+.main-content{
+    flex-grow: 1;
+}
+input:not(:focus):not(:placeholder-shown):valid{
+    border-color: green;
+}
+input:not(:focus):not(:placeholder-shown):invalid{
+    border-color: red;
+}
+input:focus + .validation-error,
+input:valid + .validation-error,
+input:placeholder-shown + .validation-error{
+    display: none;
+}
+/* CSS RETINA */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx){
+
+    /* Retina-specific stuff here */
+}
+
+
+.box1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box2 h1{
+    font-size: 50px;
+}
+
+.box2 b{
+    color: chocolate;
+}
+
+ul{
+    display: flex;
+    margin-top: 10px;
+    margin-left: -200px;
+    cursor: pointer;
+}
+
+ul li{
+    font-size: 20px;
+    padding: 0 30px;
+    transition: all 0.4s ease;
+}
+
+.asosiy,
+li:hover{
+    color: chocolate;
+}
+
+.box4 button{
+    width: 100px;
+    height: 50px;
+    background-color: chocolate;
+}
+
+
+
+
+.karousel{
+    width: 100%;
+    height: 900px;
+}
+
+.w-100{
+    width: 100%;
+    height: 900px;
+}
+
+
+.container2{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: auto;
+}
+
+.box5{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.dark_mode .box6{
+    color: #fff;
+    background: #333;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px #333;
+}
+
+.box6{
+    width: 380px;
+    border: 1px solid #999;
+    border-radius: 20px;
+    color: #333;
+    background: #fff;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px #fff;
+}
+
+.box7{
+    width: 100px;
+    height: 100px;
+    margin: 40px 0 0 140px;
+    background: #999;
+    border-radius: 20px;
+}
+
+.best-h1{
+    padding-top: 10px;
+    padding-left: 80px;
+}
+
+.box8{
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    margin-left: 130px;
+    border-radius: 5px;
+}
+
+.box9 hr{
+    width: 250px;
+    height: 2px;
+    color: #999;
+    margin: 20px 70px;
+}
+
+.box10{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.box11{
+    display: flex;
+    padding: 0 20px;
+}
+
+.box11 i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin: 2px 0;
+    border: 1px solid #999;
+    border-radius: 10px;
+    color: chocolate;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.box11 i:hover{
+    color: rgb(181, 90, 25);
+    background-color: rgb(224, 223, 223);
+}
+
+.box12 .color1{
+    color: #999;
+}
+
+.box12 .color2{
+    margin-top: -20px;
+}
+
+.box13{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.box13 a{
+    font-size: 20px;
+    margin: 0 10px;
+    color: #999;
+}
+
+.box13 a:active{
+    color: #666;
+}
+
+.dark_mode .box14{
+    box-shadow: 0 0 10px #333;
+}
+
+.box14{
+    width: 1000px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 1px solid #999;
+    box-shadow: 0 0 10px #fff;
+}
+
+.box15 h2{
+    padding: 20px;
+}
+
+.box16{
+    width: 80px;
+    height: 8px;
+    margin-left: 15px 20px;
+    background: chocolate;
+}
+
+.box17 p{
+    font-size: 15px;
+    margin: 15px 20px;
+}
+
+.box18 h2{
+    padding: 0 20px;
+}
+
+.box19{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.box20{
+    width: 370px;
+    height: 150px;
+    margin: 0 20px; 
+    border: 1px solid #999;
+    border-radius: 10px;
+}
+
+.box21{
+    display: flex;
+    margin: 10px 20px;
+}
+
+.box22 i{
+    font-size: 35px;
+    color: chocolate;
+    margin: 25px 10px;
+    cursor: pointer;
+}
+
+.box22 i:hover{
+    color: rgb(181, 90, 25);
+}
+
+.box23{
+    margin: 25px 0;
+}
+
+
+
+
+.dark_mode .wrapper2{
+    background: #333;
+    transition: all 0.4s ease;
+}
+
+.wrapper2{
+    padding-bottom: 100px;
+    background: #fff;
+    transition: all 0.4s ease;
+}
+
+.container3{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: auto;
+}
+
+.best-h2{
+    font-size: 80px;
+    text-align: center;
+    color: chocolate;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.box24{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark_mode .box25{
+    color: #333;
+    background: #fff;
+    transition: all 0.4s ease;
+}
+
+.box25{
+    width: 380px;
+    text-align: center;
+    color: #fff;
+    background: #333;
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+
+.box25 i{
+    font-size: 80px;
+    margin: 40px 0;
+    color: chocolate;
+    cursor: pointer;
+}
+
+.box25 i:hover{
+    color: rgb(181, 90, 25);
+}
+
+.box25 h2{
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.box25 p{
+    padding: 25px 25px;
+}
+
+.box25 button{
+    width: 380px;
+    height: 80px;
+    font-size: 20px;
+    margin-top: 80px;
+    color: #fff;
+    background: chocolate;
+    border: none;
+    border-radius: 0 0 10px 10px;
+}
+
+.box25 button:hover{
+    background: rgb(180, 90, 25);
+    transition: all 0.4s ease;
+}
+
+
+
+
+.dark_mode .wrapper3{
+    color: #333;
+    background: #fff;
+    transition: all 0.4s ease;
+}
+
+.wrapper3{
+    color: #fff;
+    background: #333;
+    transition: all 0.4s ease;
+}
+
+.container4{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 50px;
+    margin: auto;
+}
+
+.box26{
+    width: 1000px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box28{
+    display: flex;
+    align-items: center;
+}
+
+.box28 i{
+    padding: 10px;
+    background: chocolate;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.box28 i:hover{
+    background: rgb(180, 90, 25);
+}
+
+.box28 h2{
+    margin-left: 10px;
+    color: blue;
+}
+
+.box28 h2:hover{
+    color: rgb(45, 45, 177);
+}
+
+.box29 p{
+    padding-top: 20px;
+    color: #d1d1d1;
+}
+
+.box30 h2{
+    color: blue;
+}
+
+.box30 h2:hover{
+    color: rgb(45, 45, 177);
+}
+
+.box30 p{
+    color: #999;
+    cursor: pointer;
+}
+
+.box30 p:hover{
+    color: #666;
+}
+
+.box31{
+    width: 100%;
+    height: 2px;
+    margin-top: 40px;
+    background: #999;
+}
+
+.box32{
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
